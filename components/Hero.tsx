@@ -1,8 +1,9 @@
 import Image from 'next/image';
+import Button from './Button';
 
 const Hero = () => {
   return (
-    <div className="padding-container max-container  py-12 flex flex-col lg:flex-row">
+    <div className="padding-container max-container py-12 flex flex-col lg:flex-row gap-6">
       <div className="hero-map" />
       <div className="relative flex flex-col lg:w-1/2 gap-12 lg:gap-8">
         <Image
@@ -35,6 +36,38 @@ const Hero = () => {
           <p className="text-blue-70">
             <span className="bold-16">198k</span> Excellent Review
           </p>
+        </div>
+        <div className="flex flex-col gap-6 sm:flex-row">
+          <Button type="button" title="Download App" variant="btn_green" />
+          <Button
+            type="button"
+            icon="/play.svg"
+            title="How we work?"
+            variant="btn_white_text"
+          />
+        </div>
+      </div>
+      <div>
+        <div className="bg-green-90 relative z-20 w-[268px] flex flex-col gap-8 rounded-3xl py-10 px-8">
+          <div>
+            <div className="flexBetween">
+              <div className="regular-14 text-gray-20">Location</div>
+              <Image src="/close.svg" alt="close" width={24} height={24} />
+            </div>
+            <div className="bold-20 text-white">Aguas Calientes</div>
+          </div>
+          <div>
+            <div className="flexBetween">
+              <div>
+                <div className="regular-14 text-gray-20">Distance</div>
+                <div className="bold-20 text-white">173.28mi</div>
+              </div>
+              <div>
+                <div className="regular-14 text-gray-20">Elevation</div>
+                <div className="bold-20 text-white">2.040 km</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
