@@ -3,7 +3,7 @@ import Button from './Button';
 
 const Hero = () => {
   return (
-    <div className="padding-container max-container py-12 flex flex-col lg:flex-row gap-6">
+    <div className="padding-container max-container py-12 flex flex-col lg:flex-row gap-6 my-10">
       <div className="hero-map" />
       <div className="relative flex flex-col lg:w-1/2 gap-12 lg:gap-8">
         <Image
